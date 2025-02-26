@@ -1,27 +1,27 @@
-let inputValid = document.querySelector(".inp");
-let validForm = document.querySelector("#validForm");
-let submit = document.querySelector('[name = "send"]');
-let message = document.querySelector(".notValid");
-let Success = document.querySelector(".Success");
-let layer = document.querySelector(".layer");
-let dismiss = document.querySelector(".dismiss");
+    let inputValid = document.querySelector(".inp");
+    let validForm = document.querySelector("#validForm");
+    let submit = document.querySelector('[name = "send"]');
+    let message = document.querySelector(".notValid");
+    let Success = document.querySelector(".Success");
+    let layer = document.querySelector(".layer");
+    let dismiss = document.querySelector(".dismiss");
 
-validForm.addEventListener("submit", function (ele) {
-  let value = inputValid.value;
-  if (value.includes("@") && value.includes(".com")) {
-    message.innerHTML = "";
-    Success.classList.add("show");
-    layer.classList.add("ground");
-  } else {
-    message.innerHTML = `* valid email required *`;
-    message.style.color = "red";
-    submit.computedStyleMap.background = "#ff000042";
-    submit.computedStyleMap.color = "#ff000042";
-  }
-  ele.preventDefault();
-});
+    validForm.addEventListener("submit", function (ele) {
+    let value = inputValid.value;
+    if (value.includes("@") && value.includes(".com")) {
+        message.innerHTML = "";
+        Success.classList.add("show");
+        layer.classList.add("ground");
+    } else {
+        message.innerHTML = `* valid email required *`;
+        message.style.color = "red";
+        submit.computedStyleMap.background = "#ff000042";
+        submit.computedStyleMap.color = "#ff000042";
+    }
+    ele.preventDefault();
+    });
 
-dismiss.onclick = function () {
-  Success.classList.remove("show");
-  layer.classList.remove("ground");
-};
+    dismiss.onclick = function () {
+    Success.classList.remove("show");
+    layer.classList.remove("ground");
+    };
