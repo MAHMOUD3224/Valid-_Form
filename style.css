@@ -14,7 +14,7 @@ body{
 }
 .Subscribe{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
 }
 @media(max-width: 1000px){
@@ -26,22 +26,22 @@ body{
 
 .Subscribe .image {
     margin-left: 10px;
-    padding: 10px;
     text-align: center;
+    width: 50%; 
+    background-image: url('./images/illustration-sign-up-desktop.svg') ;
+    background-size: 100% 99.99%;
 }
 
-.Subscribe .image img {
+/* .Subscribe .image img {
     max-width: 100%;
     margin-top: 40px;
-}
+} */
 
 @media(max-width: 1000px){
     .Subscribe .image {
         width: 100%;
-        min-width: 300px;
-    }
-    .Subscribe .image img {
-        width: 100%;
+        min-height: 700px;
+        order: -1;
     }
 }
 
