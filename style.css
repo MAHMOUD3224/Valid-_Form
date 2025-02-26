@@ -148,7 +148,7 @@ form .notValid{
 
 .Success{
     z-index: 99 ;
-    position: absolute;
+    position: fixed;
     min-width: 330px;
     top: -100%;
     left: 50%;
