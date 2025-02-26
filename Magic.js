@@ -8,7 +8,7 @@
 
     validForm.addEventListener("submit", function (ele) {
     let value = inputValid.value;
-    if (value.includes("@") && value.includes(".com")) {
+    if (value.includes("@") && value.includes(".com") && value.length > 9 ) {
         message.innerHTML = "";
         Success.classList.add("show");
         layer.classList.add("ground");
