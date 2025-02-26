@@ -12,6 +12,8 @@
         message.innerHTML = "";
         Success.classList.add("show");
         layer.classList.add("ground");
+        message.style.color = "black";
+        inputValid.style.background = "#fff";
     } else {
         message.innerHTML = `* valid email required *`;
         message.style.color = "red";
