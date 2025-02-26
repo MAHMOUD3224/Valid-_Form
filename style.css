@@ -10,16 +10,34 @@ body{
     -webkit-tap-highlight-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
     padding: 40px;
+    background-color:#38394f;
     scroll-behavior: smooth;
 }
+@media(max-width: 600px){
+    body{
+        padding: 0px;
+    }
+    
+}
 .Subscribe{
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    background-color: #ffffff;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 @media(max-width: 1000px){
     .Subscribe{
         flex-direction: column;
+        max-width: 96%;
+        max-height: 96%;
     }
     
 }
@@ -105,6 +123,11 @@ body{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+@media(max-width: 1000px){
+    .Subscribe .valid-form form input{
+    font-size: 16px;
+    }
 }
 form .notValid{
     position: absolute;
