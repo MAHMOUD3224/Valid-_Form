@@ -18,6 +18,7 @@
         submit.computedStyleMap.background = "#ff000042";
         submit.computedStyleMap.color = "#ff000042";
     }
+    inputValid.value = "" ;
     ele.preventDefault();
     });
 
