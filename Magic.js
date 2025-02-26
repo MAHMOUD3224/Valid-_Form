@@ -8,15 +8,14 @@
 
     validForm.addEventListener("submit", function (ele) {
     let value = inputValid.value;
-    if (value.includes("@") && value.includes(".com") && value.length > 9 ) {
+    if (value.includes("@") && value.includes(".com") && value.length > 10 ) {
         message.innerHTML = "";
         Success.classList.add("show");
         layer.classList.add("ground");
     } else {
         message.innerHTML = `* valid email required *`;
         message.style.color = "red";
-        submit.computedStyleMap.background = "#ff000042";
-        submit.computedStyleMap.color = "#ff000042";
+        inputValid.style.background = "#ff000040";
     }
     inputValid.value = "" ;
     ele.preventDefault();
